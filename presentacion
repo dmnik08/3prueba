@@ -1,0 +1,22 @@
+flowchart TB
+  A[Clean Code (POO)]
+  B[Habrá código]
+  C[Código desordenado]
+  D[Costo de la desorganización]
+  E[Profesionalismo]
+  F[Qué es código limpio]
+  G[Mejora continua]
+  H[Somos autores]
+  I[Principios y práctica]
+  J[Conclusión]
+
+  A -->|fundamenta| B
+  A -->|contrasta con| C
+  C -->|incrementa| D
+  A -->|promueve| E
+  A -->|define| F
+  A -->|enfatiza| H
+  A -->|requiere| G
+  A -->|se aplica con| I
+  I -->|refuerza| G
+  A -->|cierra en| J
