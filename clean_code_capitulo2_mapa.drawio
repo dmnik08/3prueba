@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
   <diagram id="MapaCap2" name="Capítulo 2 — Nombres significativos">
-    <mxGraphModel dx="1801" dy="2063" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="2084" dy="2340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -147,7 +147,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="snqXuiLyGbXh55r3JVFb-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;endFill=1;html=1;fontSize=12;" edge="1" parent="1" source="A" target="I">
+        <mxCell id="snqXuiLyGbXh55r3JVFb-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=block;endFill=1;html=1;fontSize=12;" parent="1" source="A" target="I" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="920" y="130" as="sourcePoint" />
