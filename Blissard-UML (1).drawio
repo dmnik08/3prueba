@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="GPT-Assistant" version="22.1.0" editor="www.draw.io" type="device">
+  <diagram id="BlissardUML" name="UML - Red social Blissard">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Clase: Perfil -->
+        <mxCell id="perfil" value="&lt;b&gt;Perfil&lt;/b&gt;&#xa;────────────&#xa;&lt;b&gt;Atributos&lt;/b&gt;&#xa;+ username: String&#xa;+ fechaInscripcion: Date&#xa;+ juegos: List&lt;Juego&gt;&#xa;+ amigos: List&lt;Perfil&gt;&#xa;&#xa;&lt;b&gt;Metodos&lt;/b&gt;&#xa;+ agregarAmigo(p: Perfil): void&#xa;+ eliminarAmigo(p: Perfil): void&#xa;+ enviarMensaje(a: Perfil, texto: String): void&#xa;+ top3PorCompletitud(): List&lt;Juego&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;fontSize=13;spacing=8;container=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="360" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- Clase: Juego -->
+        <mxCell id="juego" value="&lt;b&gt;Juego&lt;/b&gt;&#xa;────────────&#xa;&lt;b&gt;Atributos&lt;/b&gt;&#xa;+ nombre: String&#xa;+ horas: double&#xa;+ logros: int" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;fontSize=13;spacing=8;container=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="280" height="220" as="geometry"/>
+        </mxCell>
+
+        <!-- Asociación: Perfil (1) — (0..*) Juego : tiene -->
+        <mxCell id="edge_tiene" value="1 — 0..*  (tiene)" style="endArrow=none;startArrow=none;strokeWidth=1;rounded=0;html=1;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="perfil" target="juego">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Autoasociación: amigos (0..* — 0..*) -->
+        <mxCell id="edge_amigos" value="0..* — 0..*  (amigos)" style="endArrow=none;edgeStyle=loopEdgeStyle;strokeWidth=1;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="perfil" target="perfil">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="180" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="80" y="140"/>
+              <mxPoint x="80" y="420"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
