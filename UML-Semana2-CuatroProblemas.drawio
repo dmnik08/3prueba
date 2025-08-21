@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="GPT-Assistant" version="22.1.0" editor="www.draw.io" type="device">
+
+  <diagram id="prob1" name="Problema 1 - Red social de Blissard">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        
+<!-- Clase: Perfil -->
+<mxCell id="p1_perfil" value="&lt;b&gt;Perfil&lt;/b&gt;&#xa;— — —&#xa;+ username: String&#xa;+ fechaInscripcion: Date&#xa;+ amigos: List&lt;Perfil&gt;&#xa;+ juegos: List&lt;Juego&gt;&#xa;— — —&#xa;+ agregarAmigo(p: Perfil)&#xa;+ eliminarAmigo(p: Perfil)&#xa;+ enviarMensaje(a: Perfil, txt: String)&#xa;+ top3PorCompletitud(): List&lt;Juego&gt;" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="90" y="140" width="320" height="280" as="geometry"/>
+</mxCell>
+
+<!-- Clase: Juego -->
+<mxCell id="p1_juego" value="&lt;b&gt;Juego&lt;/b&gt;&#xa;— — —&#xa;+ nombre: String&#xa;+ horas: double&#xa;+ logros: int" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="500" y="160" width="240" height="180" as="geometry"/>
+</mxCell>
+
+<!-- Clase: Mensaje -->
+<mxCell id="p1_msj" value="&lt;b&gt;Mensaje&lt;/b&gt;&#xa;— — —&#xa;+ fechaHora: DateTime&#xa;+ texto: String" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="500" y="380" width="240" height="120" as="geometry"/>
+</mxCell>
+
+<!-- Relaciones -->
+<mxCell id="p1_e1" value="1 — 0..* (tiene)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="p1_perfil" target="p1_juego"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="p1_e2" value="0..* — 0..* (amigos)" style="endArrow=none;edgeStyle=loopEdgeStyle;" edge="1" parent="1" source="p1_perfil" target="p1_perfil">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="60" y="120" as="targetPoint"/>
+    <Array as="points"><mxPoint x="60" y="140"/><mxPoint x="60" y="380"/></Array>
+  </mxGeometry>
+</mxCell>
+<mxCell id="p1_e3" value="envía/recibe" style="endArrow=none;startArrow=none;dashed=1;" edge="1" parent="1" source="p1_perfil" target="p1_msj"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="prob2" name="Problema 2 - Valoración de productos">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        
+<mxCell id="cli" value="&lt;b&gt;Cliente&lt;/b&gt;&#xa;— — —&#xa;+ username: String&#xa;+ fechaRegistro: Date" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="80" y="120" width="220" height="120" as="geometry"/>
+</mxCell>
+<mxCell id="ped" value="&lt;b&gt;Pedido&lt;/b&gt;&#xa;— — —&#xa;+ id: UUID&#xa;+ fechaEmision: Date&#xa;+ fechaEntrega: Date" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="420" y="80" width="240" height="150" as="geometry"/>
+</mxCell>
+<mxCell id="lin" value="&lt;b&gt;LineaPedido&lt;/b&gt;&#xa;— — —&#xa;+ cantidad: int" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="420" y="260" width="200" height="100" as="geometry"/>
+</mxCell>
+<mxCell id="pro" value="&lt;b&gt;Producto&lt;/b&gt;&#xa;— — —&#xa;+ id: UUID&#xa;+ nombre: String" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="720" y="240" width="220" height="110" as="geometry"/>
+</mxCell>
+<mxCell id="val" value="&lt;b&gt;Valoracion&lt;/b&gt;&#xa;— — —&#xa;+ comentario: String&#xa;+ valor: double (0..5)&#xa;+ fecha: Date" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="80" y="320" width="260" height="140" as="geometry"/>
+</mxCell>
+<mxCell id="e1" value="1 — 0..* (realiza)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="cli" target="ped"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e2" value="1 — 1..* (tiene)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="ped" target="lin"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e3" value="1 — 1 (asocia)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="lin" target="pro"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e4" value="1 — 0..* (hace)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="cli" target="val"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e5" value="1 — 1 (sobre)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="val" target="pro"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="prob3" name="Problema 3 - Gestor de tareas">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        
+<mxCell id="miem" value="&lt;b&gt;Miembro&lt;/b&gt;&#xa;+ nombre: String&#xa;+ telefono: String&#xa;+ email: String" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="70" y="110" width="240" height="130" as="geometry"/>
+</mxCell>
+<mxCell id="eq" value="&lt;b&gt;Equipo&lt;/b&gt;&#xa;+ nombre: String" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="390" y="90" width="210" height="100" as="geometry"/>
+</mxCell>
+<mxCell id="proy" value="&lt;b&gt;Proyecto&lt;/b&gt;&#xa;+ nombre: String&#xa;+ curso: String&#xa;+ prioridad: {{alta,media,baja}}&#xa;+ fechaEntrega: Date" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="680" y="80" width="260" height="150" as="geometry"/>
+</mxCell>
+<mxCell id="tar" value="&lt;b&gt;Tarea&lt;/b&gt;&#xa;+ nombre: String&#xa;+ descripcion: String&#xa;+ estado: {{no_comenzado,en_proceso,terminado}}" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="680" y="300" width="300" height="150" as="geometry"/>
+</mxCell>
+<mxCell id="r1" value="0..* — 0..* (miembros)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="eq" target="miem"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="r2" value="1 — 0..* (proyectos)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="eq" target="proy"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="r3" value="1 — 0..* (tareas)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="proy" target="tar"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="r4" value="0..1 — 0..* (asignado)" style="endArrow=none;startArrow=none;" edge="1" parent="1" source="miem" target="tar"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="prob4" name="Problema 4 - Lista (lista enlazada)">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        
+<mxCell id="nodo" value="&lt;b&gt;Nodo&lt;/b&gt;&#xa;+ valor: T&#xa;+ next: Direccion" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="140" y="160" width="200" height="120" as="geometry"/>
+</mxCell>
+<mxCell id="lista" value="&lt;b&gt;Lista&lt;/b&gt;&#xa;+ cabeza: Direccion&#xa;+ tam: int&#xa;— — —&#xa;+ pushFront(v: T)&#xa;+ pushBack(v: T)&#xa;+ insert(i: int, v: T)&#xa;+ remove(i: int)&#xa;+ get(i: int): T&#xa;+ isEmpty(): bool" style="rounded=1;whiteSpace=wrap;html=1;spacing=8;strokeColor=#111111;" vertex="1" parent="1">
+  <mxGeometry x="500" y="120" width="260" height="260" as="geometry"/>
+</mxCell>
+<mxCell id="u1" value="usa" style="endArrow=none;startArrow=none;dashed=1;" edge="1" parent="1" source="lista" target="nodo"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
