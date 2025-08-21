@@ -1,0 +1,36 @@
+classDiagram
+class Usuario {
+  +username: String
+  +fechaInscripcion: Date
+  +agregarAmigo(u: Usuario): void
+  +eliminarAmigo(u: Usuario): void
+  +enviarMensaje(a: Usuario, texto: String): void
+  +getTop3Favoritos(): List<Juego>
+}
+class Juego {
+  +id: UUID
+  +nombre: String
+}
+class ProgresoJuego {
+  +horas: double
+  +logros: int
+  +porcentajeCompletitud(): double
+}
+class Mensaje {
+  +id: UUID
+  +fechaHora: DateTime
+  +texto: String
+  +estado: EstadoMensaje
+}
+class Amistad {
+  +estado: EstadoAmistad
+  +fechaSolicitud: Date
+  +fechaAceptacion: Date?
+}
+
+Usuario "1" -- "0..*" ProgresoJuego
+Juego "1" -- "0..*" ProgresoJuego
+Usuario "1" --> "0..*" Mensaje : envía
+Usuario "1" --> "0..*" Mensaje : recibe
+Usuario "1" -- "0..*" Amistad : usuarioA
+Usuario "1" -- "0..*" Amistad : usuarioB
