@@ -16,32 +16,62 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-5" value="atrubutuos del perfil" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-5" value="atributos del perfil" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="340" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-6" value="nombre de usuario(string)&lt;div&gt;lista de juegos:[juego]&amp;nbsp;&lt;/div&gt;&lt;div&gt;fecha de inscripcion:date&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;lista de amigos:[]&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-5" vertex="1">
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-6" value="nombre de usuario(string)&lt;div&gt;lista de juegos:[juego]&amp;nbsp;&lt;/div&gt;&lt;div&gt;fecha de inscripcion:date&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;lista de amigos:[perfil]&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-5" vertex="1">
           <mxGeometry x="15" y="55" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-10" value="nuevos metodos" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="210" y="585" width="394" height="200" as="geometry" />
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-10" value="metodos" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="540" width="394" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-11" value="agregar amigos(lista de amigos)&lt;div&gt;eliminar amigos(lista de amiugos)&amp;nbsp;&lt;/div&gt;&lt;div&gt;enviar mensajes(string)&lt;/div&gt;&lt;div&gt;mostrar porcentaje de comletitud de los juegos(logros/horas de juego)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-10" vertex="1">
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-11" value="agregar amigos(lista de amigos)&lt;div&gt;eliminar amigos(lista de amigos)&amp;nbsp;&lt;/div&gt;&lt;div&gt;enviar mensajes(string)&lt;/div&gt;&lt;div&gt;mostrar porcentaje de comletitud de los juegos(logros/horas de juego)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-10" vertex="1">
           <mxGeometry x="-6" y="65" width="400" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-12" value="atrubutuos del juego&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-12" value="atributos del juego&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="340" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-13" value="nombre del jugo:string&lt;div&gt;logros del juego: [logros]&lt;/div&gt;&lt;div&gt;cantidad e hotas jugadas:(int)&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-12" vertex="1">
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-13" value="nombre del juego:string&lt;div&gt;logros del juego: [logros]&lt;/div&gt;&lt;div&gt;cantidad e hotas jugadas:(int)&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-12" vertex="1">
           <mxGeometry x="5" y="60" width="180" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="c6V-7s6Dpfe_pbrNvJ9K" name="Página-2">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="shyGM-MUUAaPrmJ-n4Ua" name="Página-2">
+    <mxGraphModel dx="527" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PupEkHxcg74p78PUQizy-1" value="problema 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="401.6600000000001" y="220" as="sourcePoint" />
+            <mxPoint x="401.6600000000001" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="401.6600000000001" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-3" value="atrubutuos del cliente" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="300" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-4" value="nombre de usuario(string)&lt;div&gt;lista de compras:[compras]&amp;nbsp;&lt;/div&gt;&lt;div&gt;fecha de registro:date&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;lista valoraciones:[valoraciones]&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="PupEkHxcg74p78PUQizy-3">
+          <mxGeometry y="65" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-5" value="nuevos metodos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="545" width="394" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-6" value="agregar amigos(lista de amigos)&lt;div&gt;eliminar amigos(lista de amiugos)&amp;nbsp;&lt;/div&gt;&lt;div&gt;enviar mensajes(string)&lt;/div&gt;&lt;div&gt;mostrar porcentaje de comletitud de los juegos(logros/horas de juego)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="PupEkHxcg74p78PUQizy-5">
+          <mxGeometry x="-6" y="65" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-7" value="atrubutuos del pedido&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="300" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="PupEkHxcg74p78PUQizy-8" value="&lt;span style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;fechaEmision: Date&lt;/span&gt;&lt;div style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;fechaEntrega: Date&lt;/div&gt;&lt;div style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;identificador: String&lt;/div&gt;&lt;div style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;producto: Producto&lt;/div&gt;&lt;div style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;cantidad: int&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="PupEkHxcg74p78PUQizy-7">
+          <mxGeometry x="30" y="45" width="130" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
