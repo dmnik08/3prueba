@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="2">
   <diagram name="Página-1" id="R5rRtUV8QfAV9kbqdX8D">
-    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,31 +9,39 @@
         </mxCell>
         <mxCell id="XazZaZ8GkJGnkjC0Wd-L-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="413" y="270" as="sourcePoint" />
-            <mxPoint x="413" y="340" as="targetPoint" />
+            <mxPoint x="406.66" y="260" as="sourcePoint" />
+            <mxPoint x="406.66" y="330" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="413" y="320" />
+              <mxPoint x="406.66" y="310" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="XazZaZ8GkJGnkjC0Wd-L-5" value="atrubutuos del perfil" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="314" y="340" width="200" height="200" as="geometry" />
+          <mxGeometry x="170" y="340" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-6" value="nombre de usuaio&lt;div&gt;lista de juegos&amp;nbsp;&lt;/div&gt;&lt;div&gt;fecha de inscripcion&lt;/div&gt;&lt;div&gt;lista de juegos&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;nuevo atributuo= lista de amigos&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-5" vertex="1">
-          <mxGeometry x="-5" y="35" width="200" height="110" as="geometry" />
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-6" value="nombre de usuario(string)&lt;div&gt;lista de juegos:[juego]&amp;nbsp;&lt;/div&gt;&lt;div&gt;fecha de inscripcion:date&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;lista de amigos:[]&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-5" vertex="1">
+          <mxGeometry x="15" y="55" width="160" height="70" as="geometry" />
         </mxCell>
         <mxCell id="XazZaZ8GkJGnkjC0Wd-L-10" value="nuevos metodos" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="217" y="780" width="394" height="200" as="geometry" />
+          <mxGeometry x="210" y="585" width="394" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-11" value="agregar amigos&lt;div&gt;eliminar amigos&amp;nbsp;&lt;/div&gt;&lt;div&gt;enviar mensajes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;mostrar porcentaje de comletitud de los juegos(logros/horas de juego)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-10" vertex="1">
-          <mxGeometry x="-6" y="50" width="400" height="100" as="geometry" />
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-11" value="agregar amigos(lista de amigos)&lt;div&gt;eliminar amigos(lista de amiugos)&amp;nbsp;&lt;/div&gt;&lt;div&gt;enviar mensajes(string)&lt;/div&gt;&lt;div&gt;mostrar porcentaje de comletitud de los juegos(logros/horas de juego)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-10" vertex="1">
+          <mxGeometry x="-6" y="65" width="400" height="70" as="geometry" />
         </mxCell>
         <mxCell id="XazZaZ8GkJGnkjC0Wd-L-12" value="atrubutuos del juego&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="314" y="560" width="200" height="200" as="geometry" />
+          <mxGeometry x="440" y="340" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-13" value="nombre del jugo&lt;div&gt;logros del juego&amp;nbsp;&lt;/div&gt;&lt;div&gt;cantidad e hotas jugadas&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-12" vertex="1">
-          <mxGeometry x="15" y="60" width="160" height="60" as="geometry" />
+        <mxCell id="XazZaZ8GkJGnkjC0Wd-L-13" value="nombre del jugo:string&lt;div&gt;logros del juego: [logros]&lt;/div&gt;&lt;div&gt;cantidad e hotas jugadas:(int)&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XazZaZ8GkJGnkjC0Wd-L-12" vertex="1">
+          <mxGeometry x="5" y="60" width="180" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c6V-7s6Dpfe_pbrNvJ9K" name="Página-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
