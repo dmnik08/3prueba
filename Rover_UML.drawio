@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2025-09-06T00:00:00.000Z" version="24.7.10" type="device">
+  <diagram id="RoverDiagram" name="Rover UML">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Rover|- nombre: String\n- codigo: String\n- x: int = 0\n- y: int = 0\n- xInicial: int = 0\n- yInicial: int = 0\n- potenciaInicial: double = 100.0\n- potenciaDisponible: double\n- recargasRealizadas: int = 0\n- intentosDeteccion: int = 0\n- mandatosExitosos: ArrayList&lt;ArrayList&lt;String&gt;&gt;\n- mandatosNoPosibles: ArrayList&lt;ArrayList&lt;String&gt;&gt;\n- rnd: java.util.Random\n--\n- {static} {readOnly} COSTO_MOV: double = 0.5\n- {static} {readOnly} COSTO_DET: double = 0.25\n- {static} {readOnly} MAX_RECARGAS: int = 5\n--\n- {static} totalCreados: int = 0|+ Rover(nombre: String)\n+ Rover(nombre: String, potenciaInicial: double)\n--\n+ moverAdelante(): boolean\n+ moverAtras(): boolean\n+ moverDerecha(): boolean\n+ moverIzquierda(): boolean\n+ recargar(unidades: double): boolean\n--\n+ getNombre(): String\n+ getCodigo(): String\n+ getPotenciaInicial(): double\n+ getPotenciaDisponible(): double\n+ getRecargasDisponibles(): int\n+ getIntentosDeteccion(): int\n+ getPosicionActual(): String\n+ getPosicionInicial(): String\n+ getMandatosExitosos(): ArrayList&lt;ArrayList&lt;String&gt;&gt;\n+ getMandatosNoPosibles(): ArrayList&lt;ArrayList&lt;String&gt;&gt;\n+ getEstadoRover(): String\n+ getTotalCreados(): int\n--\n- detectarFugaCalor(direccion: String): boolean\n- verificarPotencia(costo: double): boolean\n- debitarPotencia(costo: double): void\n- registrarMandato(tipo: String, exito: boolean): void" style="shape=umlClass;whiteSpace=wrap;html=1;boundedLbl=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="520" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Notas:
+ - Cada intento de movimiento primero realiza detección (0.25) y luego movimiento (0.5) si no hay fuga.
+ - Detección: r &gt;= 0.5 implica fuga ⇒ NO POSIBLE.
+ - Máximo 5 recargas; registrar cada mandato con fecha, tipo y estatus.
+ - Posición inicial (0,0); movimientos ajustan ±1 en x/y.
+ - Contador global: totalCreados." style="shape=note;whiteSpace=wrap;html=1;rounded=0;size=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="140" width="360" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" style="endArrow=none;dashed=1;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
