@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2025-09-06T00:00:00.000Z" version="24.7.10" type="device">
+  <diagram id="RoverDiagram" name="Rover UML">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="rover" value="Rover|- nombre: String\n- codigo: String\n- x: int = 0\n- y: int = 0\n- xInicial: int = 0\n- yInicial: int = 0\n- potenciaInicial: double = 100.0\n- potenciaDisponible: double\n- recargasRealizadas: int = 0\n- intentosDeteccion: int = 0\n- mandatosExitosos: ArrayList&lt;ArrayList&lt;String&gt;&gt;\n- mandatosNoPosibles: ArrayList&lt;ArrayList&lt;String&gt;&gt;\n- rnd: java.util.Random\n- COSTO_MOV: double = 0.5\n- COSTO_DET: double = 0.25\n- MAX_RECARGAS: int = 5\n- totalCreados: int = 0|+ Rover(nombre: String)\n+ Rover(nombre: String, potenciaInicial: double)\n+ moverAdelante(): boolean\n+ moverAtras(): boolean\n+ moverDerecha(): boolean\n+ moverIzquierda(): boolean\n+ recargar(unidades: double): boolean\n+ getNombre(): String\n+ getCodigo(): String\n+ getPotenciaInicial(): double\n+ getPotenciaDisponible(): double\n+ getRecargasDisponibles(): int\n+ getIntentosDeteccion(): int\n+ getPosicionActual(): String\n+ getPosicionInicial(): String\n+ getMandatosExitosos(): ArrayList&lt;ArrayList&lt;String&gt;&gt;\n+ getMandatosNoPosibles(): ArrayList&lt;ArrayList&lt;String&gt;&gt;\n+ getEstadoRover(): String\n+ getTotalCreados(): int\n- detectarFugaCalor(direccion: String): boolean\n- verificarPotencia(costo: double): boolean\n- debitarPotencia(costo: double): void\n- registrarMandato(tipo: String, exito: boolean): void" style="shape=umlClass;whiteSpace=wrap;html=1;boundedLbl=1;align=left;verticalAlign=top;strokeColor=#2F66F9;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="720" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="note_rover" value="Notas:\n- Deteccion consume 0.25 y puede impedir el movimiento.\n- Movimiento consume 0.5.\n- Maximo 5 recargas.\n- Mandatos registrados con fecha, tipo y estatus.\n- Posicion inicial (0,0)." style="shape=note;whiteSpace=wrap;html=1;rounded=0;size=14;fillColor=#FFFBE6;strokeColor=#FFCC00;" vertex="1" parent="1">
+          <mxGeometry x="880" y="200" width="320" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_rover" style="endArrow=none;dashed=1;strokeColor=#FFCC00;" edge="1" parent="1" source="note_rover" target="rover">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
